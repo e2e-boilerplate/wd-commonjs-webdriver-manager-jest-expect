@@ -1,4 +1,4 @@
-name: wd-commonjs-webdriver-manager-mocha-chai-should
+name: wd-commonjs-webdriver-manager-jest-expect
 'on':
   push: null
   schedule:

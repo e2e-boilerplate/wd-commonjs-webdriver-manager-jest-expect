@@ -1,16 +1,15 @@
 {
   "author": "Girma Nigusse <xgirma@gmail.com>",
   "bugs": {
-    "url": "https://github.com/e2e-boilerplate/wd-commonjs-webdriver-manager-mocha-chai-should/issues"
+    "url": "https://github.com/e2e-boilerplate/wd-commonjs-webdriver-manager-jest-expect/issues"
   },
   "dependencies": {
-    "chai": "4.2.0",
     "chai-as-promised": "7.1.1",
-    "mocha": "7.1.1",
+    "jest": "25.3.0",
     "wd": "1.12.1",
     "webdriver-manager": "12.1.7"
   },
-  "description": "WD end-to-end test automation boilerplate. Using Commonjs, Webdriver-Manager, Mocha, Chai and Should.",
+  "description": "WD end-to-end test automation boilerplate. Using Commonjs, Webdriver-Manager, Jest and Expect.",
   "devDependencies": {
     "eslint": "6.8.0",
     "eslint-config-airbnb-base": "14.1.0",
@@ -21,7 +20,7 @@
     "prettier": "2.0.4",
     "pretty-quick": "2.0.1"
   },
-  "homepage": "https://github.com/e2e-boilerplate/wd-commonjs-webdriver-manager-mocha-chai-should#readme",
+  "homepage": "https://github.com/e2e-boilerplate/wd-commonjs-webdriver-manager-jest-expect#readme",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged --allow-empty"
@@ -29,15 +28,14 @@
   },
   "keywords": [
     "boilerplate",
-    "chai",
     "commonjs",
     "e2e",
     "e2e tests",
     "example",
+    "expect",
     "integration test",
-    "mocha",
+    "jest",
     "selenium-webdriver",
-    "should",
     "wd",
     "webdriver manager"
   ],
@@ -47,15 +45,15 @@
       "prettier --write"
     ]
   },
-  "name": "wd-commonjs-webdriver-manager-mocha-chai-should",
+  "name": "wd-commonjs-webdriver-manager-jest-expect",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/e2e-boilerplate/wd-commonjs-webdriver-manager-mocha-chai-should.git"
+    "url": "git+https://github.com/e2e-boilerplate/wd-commonjs-webdriver-manager-jest-expect.git"
   },
   "scripts": {
     "lint": "npx eslint --ext .js ./ --fix",
     "start:webdriver": "npx webdriver-manager start",
-    "test": "npx mocha spec/sandbox.spec.js",
+    "test": "npx jest",
     "update:webdriver": "npx webdriver-manager update --gecko false"
   },
   "version": "1.0.0"
