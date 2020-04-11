@@ -36,7 +36,6 @@
     "expect",
     "integration test",
     "jest",
-    "selenium-webdriver",
     "wd",
     "webdriver manager"
   ],
