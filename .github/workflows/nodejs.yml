@@ -24,5 +24,9 @@ jobs:
         run: 'npm run update:webdriver -- --versions.chrome 80.0.3987.106'
       - name: 'start:webdriver'
         run: 'npm run start:webdriver -- --versions.chrome 80.0.3987.106 &'
+      - name: Sleep for 30 seconds
+          uses: jakejarvis/wait-action@master
+          with:
+            time: '50s'
       - name: test
         run: npm run test
